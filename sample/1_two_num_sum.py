@@ -3,34 +3,15 @@ def two(nums, target):
     for i, num in enumerate(nums):
         if target - num in key_word:
             return key_word[target - num], i
-        key_word[target-num] = i
+        key_word[target - num] = i
         return []
 
 
 result = two(nums=[1, 2, 3, 4, 5], target=5)
 print(result)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "------------------------------answer-------------------------------"
+
 
 class Solution(object):
 
@@ -43,7 +24,7 @@ class Solution(object):
         lookup = {}
         for i, num in enumerate(nums):
             if target - num in lookup:
-                return [lookup[target - num],i]
+                return [lookup[target - num], i]
             lookup[num] = i
         return []
 
