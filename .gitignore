@@ -1,3 +1,5 @@
 .idea/*
 .idea/vcs.xml
 .idea/
+.DS_Store
+python_cookbook.py
